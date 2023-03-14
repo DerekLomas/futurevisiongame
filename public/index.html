@@ -2,26 +2,27 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FutureVisionAI</title>
-    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" media="screen and (min-device-width: 800px)" href="style.css" />
+    <link rel="stylesheet" media="screen and (max-width: 667px)" href="style_small.css" />
     <script src="script.js"></script>
+    
     <script src="prompt_.js"></script>
   </head>
 
   <body>
   <div class="container-outer">
     <h2>Future Vision AI</h2>
-    <!-- <div class="container-outer">
-      <button type="button" class="startResetBtn" id="button1">Start / Reset</button>
-    </div> -->
-
     <div id="chat-container">
       <div id="chat-history"></div>
-        <form id="chat-form">
-          <input type="text" id="chat-input" placeholder="Choose your option or ask for something..." />
-          <input type="submit" value="Send" class="sendButton"/>
-        </form>
+        <!-- messages will be inserted here -->
       </div>
+      <form id="chat-form">
+        <input type="text" id="chat-input" placeholder="Choose your option or ask for something..." />
+        <input type="submit" value="Send" class="sendButton"/>
+      </form>
     </div>
   </div>
   </body>

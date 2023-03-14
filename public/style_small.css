@@ -1,0 +1,113 @@
+/* Apply a general reset to remove browser defaults */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito";
+  background-color: #f2f2f2;
+}
+
+body {
+    margin: 1px;
+    /* padding: 0em; */
+    font-family: "Nunito";
+    background-color: #f2f2f2;
+  }
+
+.container-outer {
+  /* max-width: 600px; */
+  width: 100%;
+  margin: 0 auto;
+  padding: 5px;
+}
+.chat-message-user {
+    /* display: flex; */
+    text-align: right;
+    padding: 5px;
+    color: blue;
+}
+
+.chat-message-bot {
+  /* display: flex; */
+  text-align: left;
+  padding: 7px;
+  color: black;
+}
+
+/* Center the header */
+h2 {
+  text-align: center;
+}
+
+/* #chat-input:focus + .sendButton {
+    visibility: visible;
+  } */
+
+/* Style the chat container */
+#chat-container {
+  border: 1px solid rgb(204, 160, 235);
+  border-radius: 7px;
+  padding: 10px;
+  margin: 0 auto;
+  width: 99%;
+}
+
+#chat-input {
+  flex-grow: 1;
+  padding: 2px;
+  font-family: "Nunito";
+  border-radius: 9px;
+  border: 1px solid #ebc8c8;
+  font-size: 16px;
+  outline: thin;
+}
+
+/* Style the chat history */
+#chat-history {
+  height: 390px;
+  font-family: "Nunito";
+  overflow-y: scroll;
+  margin-bottom: 1px;
+  font-size: 16px;
+}
+
+/* Style the chat input and submit button */
+#chat-input {
+  width: 100%;
+  padding-top: 20px;
+  padding: 5px;
+  /* border: thin; */
+  border: 1px solid rgb(204, 160, 235);
+}
+
+
+@font-face {
+    font-family: "CabinetGrotesk";
+    src: url("./fonts/CabinetGrotesk.ttf");
+  }
+  
+  @font-face {
+    font-family: "Nunito";
+    src: url("./fonts/Nunito.ttf");
+  }
+  
+  @font-face {
+    font-family: "Nunito Italic";
+    src: url("./fonts/Nunito-Italic.ttf");
+  }
+
+  .sendButton {
+    margin: 9px 0px;
+    background-color: #7D4AD4;
+    border-radius: 4px;
+    padding: 11px;
+    color: #fff;
+    width: 90px;
+    font-weight: bold;
+    font-size: 19px;
+    font-family: "CabinetGrotesk";
+    border: 1px solid #7D4AD4;
+    visibility: visible;
+    align-self: center;
+    /* make sure the button is always visible */
+  }
